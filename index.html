@@ -1,87 +1,118 @@
 <!DOCTYPE html><html lang="es">
-    <head>
-      <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Vales mágicos para Alpacunicornio</title>
-            <style>
-                body {
-                      font-family: 'Segoe UI', sans-serif;
-                            background: #fffdf6;
-                                  color: #333;
-                                        padding: 2rem;
-                                              display: flex;
-                                                    flex-direction: column;
-                                                          align-items: center;
-                                                              }
-                                                                  h1 {
-                                                                        color: #ff69b4;
-                                                                              font-size: 2.2rem;
-                                                                                    text-align: center;
-                                                                                        }
-                                                                                            .vale {
-                                                                                                  background: #fef6ff;
-                                                                                                        border: 2px dashed #d291bc;
-                                                                                                              border-radius: 16px;
-                                                                                                                    padding: 1.5rem;
-                                                                                                                          margin: 1rem;
-                                                                                                                                width: 90%;
-                                                                                                                                      max-width: 500px;
-                                                                                                                                            box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
-                                                                                                                                                  cursor: pointer;
-                                                                                                                                                        transition: transform 0.3s ease, background 0.3s ease;
-                                                                                                                                                            }
-                                                                                                                                                                .vale:hover {
-                                                                                                                                                                      transform: scale(1.03);
-                                                                                                                                                                            background: #fce4ff;
-                                                                                                                                                                                }
-                                                                                                                                                                                    .vale h2 {
-                                                                                                                                                                                          margin-top: 0;
-                                                                                                                                                                                                color: #a64ac9;
-                                                                                                                                                                                                      font-size: 1.3rem;
-                                                                                                                                                                                                          }
-                                                                                                                                                                                                              .vale p {
-                                                                                                                                                                                                                    margin-bottom: 0;
-                                                                                                                                                                                                                          display: none;
-                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                                  .vale.usado {
-                                                                                                                                                                                                                                        opacity: 0.5;
-                                                                                                                                                                                                                                              text-decoration: line-through;
-                                                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                                                      .vale.activo p {
-                                                                                                                                                                                                                                                            display: block;
-                                                                                                                                                                                                                                                                  margin-top: 1rem;
-                                                                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                                                                        </style>
-                                                                                                                                                                                                                                                                        </head>
-                                                                                                                                                                                                                                                                        <body>
-                                                                                                                                                                                                                                                                          <h1>Vales mágicos para mi Alpacunicornio 🦙✨🦄</h1>  <div class="vale">
-                                                                                                                                                                                                                                                                              <h2>👐 Vale por un masaje de 30 minutos</h2>
-                                                                                                                                                                                                                                                                                  <p>Con aceites, música suave y mucho cariño.</p>
-                                                                                                                                                                                                                                                                                    </div>  <div class="vale">
-                                                                                                                                                                                                                                                                                        <h2>🤗 Vale por un abrazo de los que reinician el alma</h2>
-                                                                                                                                                                                                                                                                                            <p>Abrazos gigantes con bonus de besos. No caduca jamás.</p>
-                                                                                                                                                                                                                                                                                              </div>  <div class="vale">
-                                                                                                                                                                                                                                                                                                  <h2>🧁 Vale por una tarde solo para ti</h2>
-                                                                                                                                                                                                                                                                                                      <p>Tú decides: juegos, comida, pijama o caminata, si me deja mi azúcar.</p>
-                                                                                                                                                                                                                                                                                                        </div>  <div class="vale">
-                                                                                                                                                                                                                                                                                                            <h2>✉️ Vale por una carta escrita a mano</h2>
-                                                                                                                                                                                                                                                                                                                <p>Llena de amor, pensamientos dulces con sacarina y palabras bonitas.</p>
-                                                                                                                                                                                                                                                                                                                  </div>  <div class="vale">
-                                                                                                                                                                                                                                                                                                                      <h2>📖 Vale por una historia mágica con Alpacunicornio y CerdiPanda como protagonistas</h2>
-                                                                                                                                                                                                                                                                                                                          <p>¡Una aventura legendaria narrada por mí solo para ti!</p>
-                                                                                                                                                                                                                                                                                                                            </div>  <div class="vale">
-                                                                                                                                                                                                                                                                                                                                <h2>☕ Vale por un desayuno en la cama</h2>
-                                                                                                                                                                                                                                                                                                                                    <p>Con lo que más te guste o te apetezca.</p>
-                                                                                                                                                                                                                                                                                                                                      </div>  <div class="vale">
-                                                                                                                                                                                                                                                                                                                                          <h2>🎶 Vale por una playlist personalizada</h2>
-                                                                                                                                                                                                                                                                                                                                              <p>Canciones que me hacen pensar en ti. Te la paso cuando quieras.</p>
-                                                                                                                                                                                                                                                                                                                                                </div>  <script>
-                                                                                                                                                                                                                                                                                                                                                    const vales = document.querySelectorAll('.vale');
-                                                                                                                                                                                                                                                                                                                                                        vales.forEach(vale => {
-                                                                                                                                                                                                                                                                                                                                                              vale.addEventListener('click', () => {
-                                                                                                                                                                                                                                                                                                                                                                      vale.classList.toggle('activo');
-                                                                                                                                                                                                                                                                                                                                                                              vale.classList.toggle('usado');
-                                                                                                                                                                                                                                                                                                                                                                                    });
-                                                                                                                                                                                                                                                                                                                                                                                        });
-                                                                                                                                                                                                                                                                                                                                                                                          </script></body>
-                                                                                                                                                                                                                                                                                                                                                                                          </html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vales mágicos para Alpacunicornio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffdf6;
+      color: #333;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #ff69b4;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .vale {
+      position: relative;
+      background: #fef6ff;
+      border: 2px dashed #d291bc;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1rem;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .vale:hover {
+      transform: scale(1.03);
+      background: #fce4ff;
+    }
+    .vale h2 {
+      margin-top: 0;
+      color: #a64ac9;
+      font-size: 1.3rem;
+    }
+    .vale p {
+      margin-bottom: 0;
+      display: none;
+    }
+    .vale.activo p {
+      display: block;
+      margin-top: 1rem;
+    }
+    .tick {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.5rem;
+      color: #5cb85c;
+    }
+    .vale.activo .tick {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vales mágicos para mi Alpacunicornio 🦙✨🦄</h1>  <div class="vale"><span class="tick">✔️</span>
+    <h2>👐 Vale por un masaje de 30 minutos</h2>
+    <p>Con aceites, música suave y mucho cariño. Solo di cuándo.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🤗 Vale por un abrazo de los que reinician el alma</h2>
+    <p>Abrazos gigantes con bonus de besos. No caduca jamás.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🧁 Vale por una tarde solo para ti</h2>
+    <p>Tú decides: serie, comida, pijama o aventuras.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>✉️ Vale por una carta escrita a mano</h2>
+    <p>Llena de amor, pensamientos suaves y palabras bonitas.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>📖 Vale por una historia mágica con Alpacunicornio protagonista</h2>
+    <p>¡Una aventura legendaria narrada por mí solo para ti!</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>☕ Vale por desayuno en la cama</h2>
+    <p>Con lo que más te guste (y carita dormida incluida).</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🎶 Vale por una playlist personalizada</h2>
+    <p>Canciones que me hacen pensar en ti. Te la paso cuando quieras.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🌊 Vale por un paseo en la playa</h2>
+    <p>Con arena en los pies, risas y algún que otro chapuzón.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🍜 Vale por una cita en nuestro ramen favorito</h2>
+    <p>Ramen, miradas cómplices y sobremesa eterna.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🛏️ Vale por una tarde de cama, lo-fi y tonterías</h2>
+    <p>Tumbados, riendo, compartiendo auriculares y paz absoluta.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>✨ Vale por un viaje sorpresa (nivel mochilero mágico)</h2>
+    <p>Preparo todo, tú solo haces la maleta y te dejas llevar.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>💬 Vale por una noche de confidencias infinitas</h2>
+    <p>Nuestro espacio seguro, sin relojes, solo tú y yo hablando de todo.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🎸 Vale por una canción de ukelele personalizada</h2>
+    <p>Versos desafinados pero con ternura, y acordes que te hacen sonreír.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>💻 Vale por debug emocional en pareja</h2>
+    <p>Si algo falla, lo revisamos juntos: paso a paso, con breakpoints y mimos.</p>
+  </div>  <div class="vale"><span class="tick">✔️</span>
+    <h2>🧃 Vale por algo dulce (apto para diabéticos)</h2>
+    <p>Como tú: suave, alegre, y más dulce que la sacarina.</p>
+  </div>  <script>
+    const vales = document.querySelectorAll('.vale');
+    vales.forEach(vale => {
+      vale.addEventListener('click', () => {
+        vale.classList.toggle('activo');
+      });
+    });
+  </script></body>
+</html>
